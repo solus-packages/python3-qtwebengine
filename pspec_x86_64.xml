@@ -2,8 +2,8 @@
     <Source>
         <Name>python3-qtwebengine</Name>
         <Packager>
-            <Name>Justin Berthault</Name>
-            <Email>justin.berthault@zaclys.net</Email>
+            <Name>F. von Gellhorn</Name>
+            <Email>flinux@vongellhorn.ch</Email>
         </Packager>
         <License>GPL-3.0-or-later</License>
         <PartOf>programming.python</PartOf>
@@ -32,12 +32,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2019-03-25</Date>
+        <Update release="2">
+            <Date>2019-05-07</Date>
             <Version>5.12.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Justin Berthault</Name>
-            <Email>justin.berthault@zaclys.net</Email>
+            <Name>F. von Gellhorn</Name>
+            <Email>flinux@vongellhorn.ch</Email>
         </Update>
     </History>
 </PISI>

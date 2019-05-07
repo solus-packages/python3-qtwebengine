@@ -1,8 +1,8 @@
 name       : python3-qtwebengine
 version    : 5.12.1
-release    : 1
+release    : 2
 source     :
-    - https://www.riverbankcomputing.com/static/Downloads/PyQtWebEngine/PyQtWebEngine_gpl-5.12.1.tar.gz : 860704672ea1b616e1347be1f347bc1c749e64ed378370863fe209e84e9bd473
+    - https://www.riverbankcomputing.com/static/Downloads/PyQtWebEngine/5.12.1/PyQtWebEngine_gpl-5.12.1.tar.gz : 860704672ea1b616e1347be1f347bc1c749e64ed378370863fe209e84e9bd473
 license    : GPL-3.0-or-later
 component  : programming.python
 summary    : Python 3 bindings for QtWebEngine
