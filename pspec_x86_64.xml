@@ -1,0 +1,43 @@
+<PISI>
+    <Source>
+        <Name>python3-qtwebengine</Name>
+        <Packager>
+            <Name>Justin Berthault</Name>
+            <Email>justin.berthault@zaclys.net</Email>
+        </Packager>
+        <License>GPL-3.0-or-later</License>
+        <PartOf>programming.python</PartOf>
+        <Summary xml:lang="en">Python 3 bindings for QtWebEngine</Summary>
+        <Description xml:lang="en">A set of Python3 bindings for the Qt Company&apos;s Qt WebEngine libraries.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>python3-qtwebengine</Name>
+        <Summary xml:lang="en">Python 3 bindings for QtWebEngine</Summary>
+        <Description xml:lang="en">A set of Python3 bindings for the Qt Company&apos;s Qt WebEngine libraries.
+</Description>
+        <PartOf>programming.python</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngine.pyi</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngine.so</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngineCore.pyi</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngineCore.so</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngineWidgets.pyi</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngineWidgets.so</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQtWebEngine-5.12.1.dist-info/INSTALLER</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQtWebEngine-5.12.1.dist-info/METADATA</Path>
+            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQtWebEngine-5.12.1.dist-info/RECORD</Path>
+            <Path fileType="data">/usr/share/qt5/qsci/api/python/PyQtWebEngine.api</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-03-25</Date>
+            <Version>5.12.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Justin Berthault</Name>
+            <Email>justin.berthault@zaclys.net</Email>
+        </Update>
+    </History>
+</PISI>
