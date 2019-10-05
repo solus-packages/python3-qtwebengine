@@ -1,21 +1,46 @@
 name       : python3-qtwebengine
-version    : 5.12.1
-release    : 2
+version    : 5.13.1
+release    : 3
 source     :
-    - https://www.riverbankcomputing.com/static/Downloads/PyQtWebEngine/5.12.1/PyQtWebEngine_gpl-5.12.1.tar.gz : 860704672ea1b616e1347be1f347bc1c749e64ed378370863fe209e84e9bd473
+    - https://www.riverbankcomputing.com/static/Downloads/PyQtWebEngine/5.13.1/PyQtWebEngine_gpl-5.13.1.tar.gz : 8d8c1262005d8465653a848bf67327fb338e0d3c2d26090a6f7eb071dbb42092
 license    : GPL-3.0-or-later
-component  : programming.python
-summary    : Python 3 bindings for QtWebEngine
+component  :
+    - programming.python
+    - ^python-qtwebengine : programming.python
+summary    :
+    - Python 3 bindings for QtWebEngine
+    - ^python-qtwebengine : Python 2 bindings for QtWebEngine
 description: |
-    A set of Python3 bindings for the Qt Company's Qt WebEngine libraries.
+    A set of Python bindings for the Qt Company's Qt WebEngine libraries.
 builddeps  :
     - pkgconfig(python3)
     - pkgconfig(Qt5WebEngine)
     - python3-qt5
     - python3-sip-devel
+    - python-qt5
+    - python-sip-devel
+rundeps    :
+    - python-qtwebengine
+patterns   :
+    - /usr/lib/python3*
+    - ^python-qtwebengine :
+        - /usr/lib/python2*
+        - /usr/share
 setup      : |
-    python3 configure.py --no-sip-files
+    instdir=$(basename $PWD)
+    cd ..
+    cp -a $instdir py2build
+    mv $instdir py3build
+
+    pushd py2build
+        python2 configure.py --no-sip-files
+    popd
+    pushd py3build
+        python3 configure.py --no-sip-files
+    popd
 build      : |
-    %make
+    %make -C py2build
+    %make -C py3build
 install    : |
-    %make_install INSTALL_ROOT="$installdir" -j1
+    %make_install -C py2build INSTALL_ROOT="$installdir" -j1
+    %make_install -C py3build INSTALL_ROOT="$installdir" -j1
