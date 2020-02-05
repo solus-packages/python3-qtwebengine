@@ -2,8 +2,8 @@
     <Source>
         <Name>python3-qtwebengine</Name>
         <Packager>
-            <Name>Pierre-Yves</Name>
-            <Email>pyu@riseup.net</Email>
+            <Name>Joey Riches</Name>
+            <Email>josephriches@gmail.com</Email>
         </Packager>
         <License>GPL-3.0-or-later</License>
         <PartOf>programming.python</PartOf>
@@ -19,18 +19,18 @@
 </Description>
         <PartOf>programming.python</PartOf>
         <RuntimeDependencies>
-            <Dependency releaseFrom="3">python-qtwebengine</Dependency>
+            <Dependency releaseFrom="4">python-qtwebengine</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngine.pyi</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngine.so</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngineCore.pyi</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngineCore.so</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngineWidgets.pyi</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQt5/QtWebEngineWidgets.so</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQtWebEngine-5.13.1.dist-info/INSTALLER</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQtWebEngine-5.13.1.dist-info/METADATA</Path>
-            <Path fileType="library">/usr/lib/python3.6/site-packages/PyQtWebEngine-5.13.1.dist-info/RECORD</Path>
+            <Path fileType="library">/usr/lib/python3.7/site-packages/PyQt5/QtWebEngine.pyi</Path>
+            <Path fileType="library">/usr/lib/python3.7/site-packages/PyQt5/QtWebEngine.so</Path>
+            <Path fileType="library">/usr/lib/python3.7/site-packages/PyQt5/QtWebEngineCore.pyi</Path>
+            <Path fileType="library">/usr/lib/python3.7/site-packages/PyQt5/QtWebEngineCore.so</Path>
+            <Path fileType="library">/usr/lib/python3.7/site-packages/PyQt5/QtWebEngineWidgets.pyi</Path>
+            <Path fileType="library">/usr/lib/python3.7/site-packages/PyQt5/QtWebEngineWidgets.so</Path>
+            <Path fileType="library">/usr/lib/python3.7/site-packages/PyQtWebEngine-5.13.1.dist-info/INSTALLER</Path>
+            <Path fileType="library">/usr/lib/python3.7/site-packages/PyQtWebEngine-5.13.1.dist-info/METADATA</Path>
+            <Path fileType="library">/usr/lib/python3.7/site-packages/PyQtWebEngine-5.13.1.dist-info/RECORD</Path>
         </Files>
     </Package>
     <Package>
@@ -53,12 +53,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2019-10-07</Date>
+        <Update release="4">
+            <Date>2020-02-05</Date>
             <Version>5.13.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Pierre-Yves</Name>
-            <Email>pyu@riseup.net</Email>
+            <Name>Joey Riches</Name>
+            <Email>josephriches@gmail.com</Email>
         </Update>
     </History>
 </PISI>
